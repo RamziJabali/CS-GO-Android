@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/l_padding_spacing">
+
+        <!-- Gun Picture-->
+        <ImageView
+            android:id="@+id/iv_gun_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_alternate_gun_names"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ak47"
+            tools:visibility="visible" />
+
+        <!-- Category General -->
+        <TextView
+            android:id="@+id/title_general"
+            style="@style/TitleSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/general_category"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+        <!-- Alt Names -->
+        <TextView
+            android:id="@+id/tv_alternate_gun_names_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alternate_names"
+            app:layout_constraintTop_toBottomOf="@+id/title_general"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_alternate_gun_names"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/tv_alternate_gun_names_label"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_alternate_gun_names_label"
+            tools:text="AK-47, CV-47" />
+
+        <!-- Made In -->
+        <TextView
+            android:id="@+id/tv_gun_made_in_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_made_in"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_alternate_gun_names_label" />
+
+
+        <TextView
+            android:id="@+id/tv_gun_made_in"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tv_gun_made_in_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_made_in_label"
+            tools:text="America" />
+
+        <!-- Gun used by -->
+        <TextView
+            android:id="@+id/tv_gun_used_by_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_used_by"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_made_in_label" />
+
+
+        <TextView
+            android:id="@+id/tv_gun_used_by"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_used_by_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_used_by_label"
+            tools:text="Terrorist and Counter-Terrorist" />
+
+
+        <!-- Gun Category -->
+        <TextView
+            android:id="@+id/tv_gun_category_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_used_by_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_category"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_category_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_category_label"
+            tools:text="machine Gun" />
+
+
+        <!-- Gun Firing Mode -->
+        <TextView
+            android:id="@+id/tv_gun_firing_mode_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_firing_mode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_category_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_firing_mode"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_firing_mode_label"
+            app:layout_constraintLeft_toRightOf="@+id/tv_gun_firing_mode_label"
+            tools:text="Automatic, 3 - Round Burst" />
+
+
+        <!-- Gun Price -->
+        <TextView
+            android:id="@+id/tv_gun_price_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_firing_mode_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_price"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_price_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_price_label"
+            tools:text="$1750" />
+
+
+        <!-- Gun Kill Award Competitive -->
+        <TextView
+            android:id="@+id/tv_gun_kill_award_competitive_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kill_award_comp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_price_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_kill_award_competitive"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_kill_award_competitive_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_kill_award_competitive_label"
+            tools:text="300 dollars" />
+
+
+        <!-- Gun Kill Award Casual -->
+        <TextView
+            android:id="@+id/tv_gun_kill_award_casual_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kill_award_cas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_kill_award_competitive_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_kill_award_casual"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_kill_award_casual_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_kill_award_casual_label"
+            tools:text="$500" />
+
+
+        <!-- Gun Fire Rate -->
+        <TextView
+            android:id="@+id/tv_gun_rate_fire_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_fire_rate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_kill_award_casual_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_rate_fire"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_rate_fire_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_rate_fire_label"
+            tools:text="120 Rounds Per Minute:" />
+
+        <!-- Gun Caliber -->
+        <TextView
+            android:id="@+id/tv_gun_caliber_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_caliber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_rate_fire_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_caliber"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_caliber_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_caliber_label"
+            tools:text=".22" />
+
+        <!-- Gun Weight Loaded -->
+        <TextView
+            android:id="@+id/tv_gun_weighted_loaded_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_weight_loaded"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_caliber_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_weighted_loaded"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_caliber"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_weighted_loaded_label"
+            tools:text="Gun info" />
+
+        <!-- Gun Entity CSGO -->
+        <TextView
+            android:id="@+id/tv_gun_entity_csgo_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/entity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_weighted_loaded_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_entity_csgo"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_entity_csgo_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_entity_csgo_label"
+            tools:text="Gun info" />
+
+
+        <!-- Category Damage -->
+        <TextView
+            android:id="@+id/title_damage"
+            style="@style/TitleSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/damage_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_entity_csgo_label" />
+
+        <!-- Armor Penetration -->
+        <TextView
+            android:id="@+id/tv_gun_armor_penetration_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_armor_penetration"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_damage" />
+
+        <TextView
+            android:id="@+id/tv_gun_armor_penetration"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_armor_penetration_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_armor_penetration_label"
+            tools:text="45" />
+
+        <!-- Penetration Power-->
+        <TextView
+            android:id="@+id/tv_gun_penetration_power_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_penetration"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_armor_penetration_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_penetration_power"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_penetration_power_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_penetration_power_label"
+            tools:text="Gun info" />
+
+
+        <!-- Damage-->
+        <TextView
+            android:id="@+id/tv_gun_damage_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_damage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_penetration_power_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_damage"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_damage_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_damage_label"
+            tools:text="Gun info" />
+
+        <!-- Clip and Reload Category-->
+        <TextView
+            android:id="@+id/title_clip_reload"
+            style="@style/TitleSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/clip_reload_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_damage_label" />
+
+
+        <!-- Reload Time-->
+
+        <TextView
+            android:id="@+id/tv_gun_reload_time_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_reload_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_clip_reload" />
+
+
+        <TextView
+            android:id="@+id/tv_gun_reload_time"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reload Time:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_reload_time_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_reload_time_label" />
+
+        <!-- Magazine capacity-->
+        <TextView
+            android:id="@+id/tv_magazine_capacity_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/magazine_capacity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_reload_time_label" />
+
+        <TextView
+            android:id="@+id/tv_magazine_capacity"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_magazine_capacity_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_magazine_capacity_label"
+            tools:text="Gun info" />
+
+
+        <!-- Magazine Cost -->
+        <TextView
+            android:id="@+id/tv_magazine_cost_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/magazine_cost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_magazine_capacity_label" />
+
+
+        <TextView
+            android:id="@+id/tv_magazine_cost"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_magazine_cost_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_magazine_cost_label"
+            tools:text="$30" />
+
+        <!-- Projectile Weight -->
+        <TextView
+            android:id="@+id/tv_projectile_weight_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/projectile_weight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_magazine_cost_label" />
+
+        <TextView
+            android:id="@+id/tv_projectile_weight"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_projectile_weight_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_projectile_weight_label"
+            tools:text="5 grams" />
+
+        <!-- Accuracy Category-->
+        <TextView
+            android:id="@+id/title_accuracy"
+            style="@style/TitleSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/accuracy_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_projectile_weight_label" />
+
+        <!-- Gun Recoil Control -->
+        <TextView
+            android:id="@+id/tv_gun_recoil_control_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gun_recoil_rate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_accuracy" />
+
+        <TextView
+            android:id="@+id/tv_gun_recoil_control"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_recoil_control_label"
+            app:layout_constraintLeft_toRightOf="@id/tv_gun_recoil_control_label" />
+
+        <!-- Accurate Range-->
+        <TextView
+            android:id="@+id/tv_gun_accurate_range_label"
+            style="@style/GunLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accurate_range"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gun_recoil_control_label" />
+
+        <TextView
+            android:id="@+id/tv_gun_accurate_range"
+            style="@style/GunValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accurate_range"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gun_accurate_range_label"
+            app:layout_constraintLeft_toRightOf="@+id/tv_gun_accurate_range_label" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

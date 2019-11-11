@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Csgo_guns</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="alternate_names">Alternate Names:</string>
+    <string name="damage_category">Damage</string>
+    <string name="gun_armor_penetration">Armor Penetration Power:</string>
+    <string name="gun_penetration">Penetration Power:</string>
+    <string name="gun_damage">Damage:</string>
+    <string name="clip_reload_category">Clip And Reload</string>
+    <string name="gun_reload_time">Reload Time:</string>
+    <string name="magazine_cost">Magazine Cost:</string>
+    <string name="magazine_capacity">Magazine Capacity:</string>
+    <string name="projectile_weight">Projectile Weight:</string>
+    <string name="accuracy_category">Accuracy</string>
+    <string name="gun_recoil_rate">Recoil Rate:</string>
+    <string name="accurate_range">Accurate Range</string>
+    <string name="entity">Counter Strike Entity:</string>
+    <string name="gun_made_in">Made in:</string>
+    <string name="gun_used_by">Used By:</string>
+    <string name="gun_category">Category:</string>
+    <string name="gun_firing_mode">Firing Mode:</string>
+    <string name="gun_price">Price:</string>
+    <string name="kill_award_comp">Kill Award(competitive):</string>
+    <string name="kill_award_cas">Kill Award(casual):</string>
+    <string name="gun_fire_rate">Fire Rate:</string>
+    <string name="gun_caliber">Gun Caliber:</string>
+    <string name="gun_weight_loaded">Gun Weight Loaded:</string>
+    <string name="general_category">General</string>
+    <string name="bar_title">Weapons</string>
+
+</resources>

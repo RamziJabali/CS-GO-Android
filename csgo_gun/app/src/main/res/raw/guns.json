@@ -1,0 +1,92 @@
+[
+  {
+    "name": "ak-47",
+    "alternate_names": [
+      "cv-47"
+    ],
+    "made_in_country": "russia",
+    "gun_cost": "$2700",
+    "magazine_cost": "$80",
+    "gun_caliber": "7.62",
+    "magazine_capacity": "30/90",
+    "gun_firing_mode": [
+      "automatic"
+    ],
+    "gun_category": "machine gun",
+    "gun_rate_fire_per_minute_automatic": "600",
+    "gun_weight_loaded": "4.79",
+    "projectile_weight": "7.9",
+    "gun_used_by": [
+      "Terrorist"
+    ],
+    "gun_reload_time": "2.5s",
+    "gun_kill_award_competitive": "300",
+    "gun_kill_award_casual": "150",
+    "gun_damage": "36",
+    "gun_recoil_control": "69%",
+    "gun_accurate_range": "22m",
+    "gun_armor_penetration": "77.5%",
+    "gun_penetration_power": "200",
+    "gun_entity_csgo": "weapon_ak47"
+  },
+  {
+    "name": "colt-45",
+    "alternate_names": [
+      "m4"
+    ],
+    "made_in_country": "USA",
+    "gun_cost": "$3100",
+    "magazine_cost": "$80",
+    "gun_caliber": "7.62",
+    "magazine_capacity": "30/90",
+    "gun_firing_mode": [
+      "Burst"
+    ],
+    "gun_category": "machine gun",
+    "gun_rate_fire_per_minute_automatic": "600",
+    "gun_weight_loaded": "4.79",
+    "projectile_weight": "7.9",
+    "gun_used_by": [
+      "ct"
+    ],
+    "gun_reload_time": "2.5s",
+    "gun_kill_award_competitive": "300",
+    "gun_kill_award_casual": "150",
+    "gun_damage": "36",
+    "gun_recoil_control": "69%",
+    "gun_accurate_range": "22m",
+    "gun_armor_penetration": "77.5%",
+    "gun_penetration_power": "200",
+    "gun_entity_csgo": ""
+  },
+  {
+    "name": "M19",
+    "alternate_names": [
+      "m4"
+    ],
+    "made_in_country": "USA",
+    "gun_cost": "$3100",
+    "magazine_cost": "$80",
+    "gun_caliber": "7.62",
+    "magazine_capacity": "30/90",
+    "gun_firing_mode": [
+      "automatic"
+    ],
+    "gun_category": "machine gun",
+    "gun_rate_fire_per_minute_automatic": "600",
+    "gun_weight_loaded": "4.79",
+    "projectile_weight": "7.9",
+    "gun_used_by": [
+      "ct","t"
+    ],
+    "gun_reload_time": "2.5s",
+    "gun_kill_award_competitive": "300",
+    "gun_kill_award_casual": "150",
+    "gun_damage": "36",
+    "gun_recoil_control": "69%",
+    "gun_accurate_range": "22m",
+    "gun_armor_penetration": "20%",
+    "gun_penetration_power": "200",
+    "gun_entity_csgo": ""
+  }
+]

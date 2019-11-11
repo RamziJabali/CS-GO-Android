@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jabali.ramzi.csgo_guns">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/csgo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/csgo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".gun_list_page.GunListActivity"
+            android:label="@string/bar_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".gun_detail_page.GunActivity" />
+    </application>
+
+</manifest>

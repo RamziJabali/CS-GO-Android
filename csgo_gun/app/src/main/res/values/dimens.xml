@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacings -->
+    <!-- Never referenced directly -->
+    <dimen name="quarter_spacing">2dp</dimen>
+    <dimen name="half_spacing">4dp</dimen>
+    <dimen name="single_spacing">8dp</dimen>
+    <dimen name="double_spacing">16dp</dimen>
+    <dimen name="triple_spacing">24dp</dimen>
+    <!---->
+
+    <!-- Horizontal Margins -->
+    <dimen name="xs_horizontal_spacing">@dimen/quarter_spacing</dimen>
+    <dimen name="s_horizontal_spacing">@dimen/half_spacing</dimen>
+    <dimen name="m_horizontal_spacing">@dimen/single_spacing</dimen>
+    <dimen name="l_horizontal_spacing">@dimen/double_spacing</dimen>
+
+    <!-- Padding -->
+    <dimen name="xs_padding_spacing">@dimen/quarter_spacing</dimen>
+    <dimen name="s_padding_spacing">@dimen/half_spacing</dimen>
+    <dimen name="m_padding_spacing">@dimen/single_spacing</dimen>
+    <dimen name="l_padding_spacing">@dimen/double_spacing</dimen>
+
+    <!-- Vertical Margins -->
+    <dimen name="xs_vertical_spacing">@dimen/quarter_spacing</dimen>
+    <dimen name="s_vertical_spacing">@dimen/half_spacing</dimen>
+    <dimen name="m_vertical_spacing">@dimen/single_spacing</dimen>
+    <dimen name="l_vertical_spacing">@dimen/double_spacing</dimen>
+
+    <!-- Text Sizes-->
+    <dimen name="xs_text_size">12sp</dimen>
+    <dimen name="s_text_size">14sp</dimen>
+    <dimen name="m_text_size">16sp</dimen>
+    <dimen name="l_text_size">18sp</dimen>
+    <dimen name="xl_text_size">20sp</dimen>
+
+    <!-- Custom Sizes -->
+</resources>
