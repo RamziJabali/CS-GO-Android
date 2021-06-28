@@ -17,7 +17,7 @@
     "gun_weight_loaded": "4.79",
     "projectile_weight": "7.9",
     "gun_used_by": [
-      "Terrorist"
+      "T"
     ],
     "gun_reload_time": "2.5s",
     "gun_kill_award_competitive": "300",
@@ -47,7 +47,7 @@
     "gun_weight_loaded": "4.79",
     "projectile_weight": "7.9",
     "gun_used_by": [
-      "ct"
+      "CT"
     ],
     "gun_reload_time": "2.5s",
     "gun_kill_award_competitive": "300",
@@ -77,7 +77,7 @@
     "gun_weight_loaded": "4.79",
     "projectile_weight": "7.9",
     "gun_used_by": [
-      "ct","t"
+      "CT","T"
     ],
     "gun_reload_time": "2.5s",
     "gun_kill_award_competitive": "300",
