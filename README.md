@@ -3,3 +3,7 @@
     <img width="300" height="645" src="https://github.com/RamziJabali/CS-GO-Android/blob/master/screenshots/gun_list.png?raw=true">  
   <img width="300" height="645" src="https://github.com/RamziJabali/CS-GO-Android/blob/master/screenshots/gun_detail.png?raw=true">  
 </p>
+
+## Libraries
+- [Butterknife](https://github.com/JakeWharton/butterknife)
+- [Gson](https://github.com/google/gson)
